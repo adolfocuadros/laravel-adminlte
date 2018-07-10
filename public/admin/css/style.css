@@ -1,0 +1,41 @@
+.sgloading {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1500;
+    width: 100%;
+    /*background-color: rgba(0, 0, 0, 0.57);*/
+    background: rgba(0, 0, 0, 0.57) url('../img/loading_blue.gif') center no-repeat;
+    background-size: 30px 30px;
+    height: 100%;
+}
+
+.sg-input {
+    margin-bottom: .8em;
+}
+
+.sg-input .input-group-addon {
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+li.list-group-item:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-header .logo {
+    background-color: #1C3C5E !important;
+}
+
+.skin-blue .main-header .navbar {
+    background-color: #3a5879 !important;
+}
+
+.main-header li.user-header {
+    background-color: #3a5879 !important;
+}
