@@ -17,6 +17,11 @@
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
     </li>
+    <li>
+        <a href="{!! route('admin.usuarios') !!}">
+            <i class="fa fa-users"></i> <span>Usuarios</span>
+        </a>
+    </li>
     <li class="treeview">
         <a href="#">
             <i class="fa fa-circle"></i> <span>Niveles</span>

@@ -36,10 +36,10 @@ class ModelFactory
         'withRelation' => 'withRelation'
     ];
 
-    public function __construct(Request $request, $model)
+    public function __construct($model)
     {
         $this->model = $model;
-        $this->request = $request;
+        $this->request = request();
         if(is_string($model)) {
             $this->query = $model::query();
         } else {
@@ -114,7 +114,7 @@ class ModelFactory
         $request = $this->request;
 
         //Aplicando ordenación
-        if($request->has($this->params['sortBy']) && !empty($this->sortables)) {
+        if(!empty($request->get($this->params['sortBy'])) && !empty($this->sortables)) {
             list($sortCol, $sortDir) = explode('|', $request->get($this->params['sortBy']));
             if(in_array($sortCol, $this->sortables)) {
                 $this->query->orderBy($sortCol, $sortDir);
