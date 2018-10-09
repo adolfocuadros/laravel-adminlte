@@ -18,7 +18,7 @@
         </a>
     </li>
     <li>
-        <a href="{!! route('admin.usuarios') !!}">
+        <a href="{!! route('panel.usuarios') !!}">
             <i class="fa fa-users"></i> <span>Usuarios</span>
         </a>
     </li>

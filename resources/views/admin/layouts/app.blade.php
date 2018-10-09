@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{!! $pageTitle or 'Tui Perú Admin' !!}</title>
+    <title>{!! $pageTitle or 'Panel Admin' !!}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -141,7 +141,7 @@
 <script src="{!! asset('admin/plugins/fastclick/fastclick.js') !!}"></script>
 <!-- AdminLTE App -->
 <script src="{!! asset('admin/js/adminlte.min.js') !!}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.0.0/sweetalert2.all.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/vue/1.0.28/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
 <script src="http://cdn.jsdelivr.net/vue.table/1.5.3/vue-table.js"></script>

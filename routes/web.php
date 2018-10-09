@@ -31,14 +31,11 @@ Route::get('login', function() {
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::middleware('auth')->namespace('Admin')->group(function() {
-    Route::get('admin/acerca-de', function() {
+    Route::get('panel/acerca-de', function() {
         return view('admin.pages.acerca_de');
     })->name('panel.acerca_de');
-    Route::get('/', 'DashboardController@index')->name('dashboard');
-    Route::get('admin/', 'DashboardController@index')->name('dashboard');
+    Route::get('/', 'DashboardController@index');
+    Route::get('panel/', 'DashboardController@index')->name('dashboard');
 
-    \App\Lib\Helper::RoutesCRUD('admin/usuarios', 'UserController', 'admin.usuarios', '{user}');
+    \App\Lib\Helper::RoutesCRUD('panel/usuarios', 'UserController', 'panel.usuarios', '{user}');
 });
-
-
-Route::get('/home', 'HomeController@index')->name('home');

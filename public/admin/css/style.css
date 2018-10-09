@@ -39,3 +39,8 @@ li.list-group-item:after {
 .main-header li.user-header {
     background-color: #3a5879 !important;
 }
+
+/*Sweet Alert Solución size*/
+.swal2-popup {
+    font-size: 1.6rem !important;
+}
